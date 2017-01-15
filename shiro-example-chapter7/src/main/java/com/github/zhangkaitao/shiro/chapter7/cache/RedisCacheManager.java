@@ -12,7 +12,7 @@ public class RedisCacheManager implements CacheManager {
 	private Map<String,Cache<String,Object>> caches;
 	
 	public RedisCacheManager() {
-		RedisPool.init("192.168.6.133", 6379, null);
+		RedisPool.init("127.0.0.1", 6379, null);
 		caches = new ConcurrentHashMap<String, Cache<String,Object>>();
 	}
 
